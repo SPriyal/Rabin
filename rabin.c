@@ -7,14 +7,10 @@
 
 void compute_matrix(char* F, int N, int m);
 void divide_string(char* F, int size);
-int **array2_create(int N, int m);
-void createVandermonde(int nx);
-void construct_vander_matrix(int N, int m);
 char** split = NULL;
 char** S = NULL;
 char*** M = NULL;
 double* A = NULL;
-int* input_array = NULL;
 int* temp = NULL;
 
 
