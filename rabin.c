@@ -13,7 +13,6 @@ char*** M = NULL;
 double* A = NULL;
 int* temp = NULL;
 
-
 int main() 
 {
   char* F = "testing string for rabin";
@@ -24,7 +23,6 @@ int main()
   construct_vander_matrix(N, m);
   return 0;
 }
-
 
 void divide_string(char* s, int size) 
 {
@@ -52,7 +50,6 @@ void divide_string(char* s, int size)
   }
 }
 
-
 void compute_matrix(char *F, int N, int m) 
 {
   divide_string(F, m);
@@ -66,10 +63,9 @@ void compute_matrix(char *F, int N, int m)
   for(int i=0; i<N/m; i++)
   {
     M[i] = S[i];
-    printf("%s\n", M[i]);
+    // printf("%s\n", M[i]);
   }
 }
-
 
 void construct_vander_matrix(int N, int m)
 {
@@ -78,14 +74,10 @@ void construct_vander_matrix(int N, int m)
   for(int i=0; i<N; i++)
   {
     temp[i] = i+1;
-    printf("%G\n", temp[i]);
+    // printf("%G\n", temp[i]);
     temp2[i] = (i+1)*10;
-    printf("%G\n", temp2[i]);
+    // printf("%G\n", temp2[i]);
   }
   A = bivand1(N, temp, temp2);
-  printf("%G\n", A);
+  // printf("%G\n", A);
 }
-
-
-
-
